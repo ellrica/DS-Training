@@ -1,0 +1,40 @@
+print("KALKULATOR SUPER SEDERHANA")
+print("Operasi yang tersedia:")
+print("=> Pertambahan")
+print("=> Pengurangan")
+print("=> Pengalian")
+print("=> Pembagian")      
+print("=> True atau False\n")
+
+print("Silakan coba!\n")
+
+
+angka1 = float(input("Masukkan angka pertama = "))
+op = input("Masukan operator = ")
+angka2 = float(input("Masukkan angka kedua = \n"))
+
+print("\n")
+
+sama = angka1 == angka2
+tidakSama = angka1 != angka2
+lebihBesar = angka1 > angka2
+lebihKecil = angka1 < angka2
+
+if op == "+":
+    print("Hasil pertambahan adalah", angka1 + angka2)
+elif op == "-":
+    print("Hasil pengurangan adalah", angka1 - angka2)
+elif op == "*":
+    print("Hasil pengalian adalah", angka1 * angka2)
+elif op == "/":
+    print("Hasil pembagian adalah", angka1 / angka2)
+elif op == "==":
+    print("Jawabannya adalah", sama)
+elif op == "!=":
+    print("Jawabannya adalah", tidakSama)
+elif op == ">":
+    print("Jawabannya adalah", lebihBesar)
+elif op == "<":
+    print("Jawabannya adalah", lebihKecil)
+else:
+    print("Masukan tidak valid, coba lagi!")``
